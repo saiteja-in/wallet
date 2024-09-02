@@ -5,6 +5,7 @@ import { Toaster } from "react-hot-toast";
 import { ThemeProvider } from "@/components/Theme";
 import NavBar from "./components/NavBar";
 import { Separator } from "@radix-ui/react-dropdown-menu";
+import Footer from "./components/Footer";
 
 const inter = Noto_Sans_Sundanese({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Toaster />
           {/* <NavBar /> */}
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
